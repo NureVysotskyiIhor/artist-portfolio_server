@@ -13,8 +13,7 @@ import java.time.LocalDateTime;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Document (collection = "users")
-
+@Document(collection = "users")
 public class User {
 
   @Id
@@ -22,12 +21,14 @@ public class User {
 
   @Indexed(unique = true)
   private String email;
-
+  private String password;
   private String name;
-  private String avaratUlr;
+  private String avatarUrl;
   private String bio;
 
+  private Boolean isVerified = false;
+
   @CreatedDate
-  private LocalDateTime createdDate;
+  private LocalDateTime createdAt;
 
 }
