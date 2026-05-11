@@ -1,3 +1,8 @@
+# fly.toml app configuration file generated for artist-portfolio-server on 2026-05-11T09:36:20Z
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
 app = 'artist-portfolio-server'
 primary_region = 'fra'
 
@@ -14,3 +19,4 @@ primary_region = 'fra'
   memory = '512mb'
   cpu_kind = 'shared'
   cpus = 1
+  memory_mb = 512
